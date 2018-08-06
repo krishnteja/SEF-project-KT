@@ -1,0 +1,9 @@
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryDatabase\PizzaDeliveryDatabase\bin\Debug\PizzaDeliveryDatabase.dacpac
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryDatabase\PizzaDeliveryDatabase\bin\Debug\PizzaDeliveryDatabase.dll
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryDatabase\PizzaDeliveryDatabase\bin\Debug\PizzaDeliveryDatabase.pdb
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryDatabase\PizzaDeliveryDatabase\obj\Debug\PizzaDeliveryDatabase.dll
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryDatabase\PizzaDeliveryDatabase\obj\Debug\PizzaDeliveryDatabase.pdb
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryDatabase\PizzaDeliveryDatabase\obj\Debug\Model.xml
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryDatabase\PizzaDeliveryDatabase\obj\Debug\refactor.xml
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryDatabase\PizzaDeliveryDatabase\obj\Debug\postdeploy.sql
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryDatabase\PizzaDeliveryDatabase\obj\Debug\predeploy.sql
