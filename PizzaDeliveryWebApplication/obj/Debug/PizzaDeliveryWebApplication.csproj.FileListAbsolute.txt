@@ -64,6 +64,5 @@ c:\users\krishnak\documents\visual studio 2015\Projects\PizzaDeliveryWebApplicat
 c:\users\krishnak\documents\visual studio 2015\Projects\PizzaDeliveryWebApplication\PizzaDeliveryWebApplication\bin\Microsoft.Owin.Security.Google.xml
 c:\users\krishnak\documents\visual studio 2015\Projects\PizzaDeliveryWebApplication\PizzaDeliveryWebApplication\bin\Microsoft.Owin.Security.Twitter.xml
 c:\users\krishnak\documents\visual studio 2015\Projects\PizzaDeliveryWebApplication\PizzaDeliveryWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-c:\users\krishnak\documents\visual studio 2015\Projects\PizzaDeliveryWebApplication\PizzaDeliveryWebApplication\obj\Debug\PizzaDeliveryWebApplication.csprojResolveAssemblyReference.cache
 c:\users\krishnak\documents\visual studio 2015\Projects\PizzaDeliveryWebApplication\PizzaDeliveryWebApplication\obj\Debug\PizzaDeliveryWebApplication.dll
 c:\users\krishnak\documents\visual studio 2015\Projects\PizzaDeliveryWebApplication\PizzaDeliveryWebApplication\obj\Debug\PizzaDeliveryWebApplication.pdb

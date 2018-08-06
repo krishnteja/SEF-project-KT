@@ -1,0 +1,9 @@
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryWebApplication\aspnet-PizzaDeliveryWebApplication\bin\Debug\aspnet-PizzaDeliveryWebApplication.dacpac
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryWebApplication\aspnet-PizzaDeliveryWebApplication\bin\Debug\aspnet_PizzaDeliveryWebApplication.dll
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryWebApplication\aspnet-PizzaDeliveryWebApplication\bin\Debug\aspnet_PizzaDeliveryWebApplication.pdb
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryWebApplication\aspnet-PizzaDeliveryWebApplication\obj\Debug\Model.xml
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryWebApplication\aspnet-PizzaDeliveryWebApplication\obj\Debug\refactor.xml
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryWebApplication\aspnet-PizzaDeliveryWebApplication\obj\Debug\postdeploy.sql
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryWebApplication\aspnet-PizzaDeliveryWebApplication\obj\Debug\predeploy.sql
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryWebApplication\aspnet-PizzaDeliveryWebApplication\obj\Debug\aspnet_PizzaDeliveryWebApplication.dll
+C:\Users\krishnak\Documents\Visual Studio 2015\Projects\PizzaDeliveryWebApplication\aspnet-PizzaDeliveryWebApplication\obj\Debug\aspnet_PizzaDeliveryWebApplication.pdb
