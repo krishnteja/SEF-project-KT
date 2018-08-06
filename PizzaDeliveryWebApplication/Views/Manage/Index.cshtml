@@ -1,0 +1,50 @@
+﻿@model PizzaDeliveryWebApplication.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage Account";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Change your account settings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Password:</dt>
+        <dd>
+            [
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink("Change your password", "ChangePassword")
+            }
+            else
+            {
+                @Html.ActionLink("Create", "SetPassword")
+            }
+            ]
+        </dd>
+        <dt>Your Address:</dt>
+        <dd>
+            @if (Model.UserInfo != null)
+            {
+                if (Model.UserInfo.Line1 != null)
+                {
+                    <p>@Model.UserInfo.Line1</p>
+                }
+
+                if (Model.UserInfo.Line2 != null)
+                {
+                   <p>@Model.UserInfo.Line2</p>
+                }
+
+                <p>@Model.UserInfo.City</p>
+                <p>@Model.UserInfo.State</p>
+                <p>@Model.UserInfo.Country</p> 
+                <p>@Model.UserInfo.ZipCode</p>   
+            }
+        </dd>
+        <dt></dt>
+       
+        
+    </dl>
+</div>

@@ -1,0 +1,140 @@
+﻿@using PizzaDeliveryWebApplication.Models
+@model CartModel
+
+@{
+    ViewBag.Title = "Cart";
+    double itemPrice = 0;
+    double totalPrice = 0;
+}
+
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<div>
+    <table>
+        @if (Model != null)
+        {
+            foreach (var item in Model.SelectedItems)
+            {
+                itemPrice = double.Parse(item.Quantity.ToString()) * item.ItemPrice;
+                totalPrice = totalPrice + itemPrice;
+                <tr>
+
+                    <td>
+                        <img src="@Url.Content(item.ItemImageUrl)"
+                             style="max-height:100px;max-width:100px" />
+                    </td>
+                    <td>
+                        <h4>@item.ItemName</h4>
+                    </td>
+                    <td>
+                        <input type="text" id="txtUpDown+@item.ItemId" value="@item.Quantity" style="max-width:50px;" readonly="readonly" />
+                        <input type="button" id="lblUp" value="+" onclick="up(@item.ItemId, @item.ItemPrice)" />
+                        <input id="lblDown" type="button" value="-" onclick="down(@item.ItemId, @item.ItemPrice)" />
+                    </td>
+                    <td>
+                        <h4>$<label id="itemPrice+@item.ItemId">@itemPrice</label></h4>
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td> </td>
+                <td></td>
+                <td><h4>Total:</h4></td>
+                <td>$<label id="totalPrice">@totalPrice</label></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td></td>
+                <td><input id="btnsave" type="submit" value="Save Cart" onclick="saveOrder()" /></td>
+                <td><input id="btnorder" type="submit" value="Order Now" onclick="showOrder()" /></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td></td>
+                <td></td>
+
+                <td><label id="lblMessage" style="color:brown;font-weight:bold;display:none">No item selected!</label></td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+<script type="text/javascript">
+
+    var quantity1 = -1;
+    var quantity2 = -1;
+    var quantity3 = -1;
+    var quantity4 = -1;
+    var total=0;
+
+    function up(id,price)
+    {
+        total = parseInt(document.getElementById('totalPrice').innerText);
+        var itemPrice = parseInt(document.getElementById('itemPrice+' + id).innerText);
+        var quantity = parseInt(document.getElementById('txtUpDown+' + id).value);
+        total = total - itemPrice;
+        quantity = quantity + 1;
+        itemPrice = quantity * price;
+        total = total + itemPrice;
+        updateChange(id, quantity, itemPrice, total);
+    }
+
+    function down(id,price)
+    {
+        total = parseInt(document.getElementById('totalPrice').innerText);
+        var itemPrice = parseInt(document.getElementById('itemPrice+' + id).innerText);
+        var quantity = parseInt(document.getElementById('txtUpDown+' + id).value);
+
+        total = total - itemPrice;
+
+        if (quantity > 0)
+        {
+            quantity = quantity - 1;
+        }
+
+        itemPrice = quantity * price;
+        total = total + itemPrice;
+
+        updateChange(id,quantity, itemPrice, total);
+    }
+
+    function updateChange(id, quantity, itemPrice, total)
+    {
+        document.getElementById('txtUpDown+' + id).value = quantity;
+        document.getElementById('itemPrice+' + id).innerText = itemPrice;
+        document.getElementById('totalPrice').innerText = total;
+        totalPrice=total;
+        switch(id) {
+            case 1:
+                quantity1=quantity;
+                break;
+            case 2:
+                quantity2=quantity;
+                break;
+            case 3:
+                quantity3=quantity;
+                break;
+            case 4:
+                quantity4=quantity;
+                break;
+
+            default:
+                quantity1=-1;
+        }
+    }
+
+    function showOrder()
+    {        
+        var url= "@Url.Action("ConfirmOrder", "Home")?quan1="+quantity1+"&quan2="+quantity2+"&quan3="+quantity3+"&quan4="+quantity4+"&total="+@totalPrice;
+        location.href = url;      
+    }
+
+    function saveOrder()
+    {
+        var url="@Url.Action("SaveOrder", "Home")?quan1="+quantity1+"&quan2="+quantity2+"&quan3="+quantity3+"&quan4="+quantity4+"&total="+@totalPrice;
+        location.href = url;
+    }
+
+</script>

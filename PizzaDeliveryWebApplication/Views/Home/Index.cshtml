@@ -1,0 +1,36 @@
+﻿@using PizzaDeliveryWebApplication.Models
+@model MenuModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1 style="color:crimson;font-weight:bold"> <img src="~/Content/16359030-delivery-boy-on-a-scooter-in-a-hurry-to-deliver-pizza.jpg" />Fast Pizza Delivery</h1>
+    <p class="lead">Order now for the fastest delicious pizza delivery!</p>
+</div>
+
+<div class="row" style="white-space:nowrap;"> 
+  <table>
+      <tr>  
+@foreach (var item in Model.Items)
+{ 
+    <td>
+        <h3>@item.ItemName</h3>
+        <p>
+            <table>
+                <tr>
+                    <td>
+                          <img src="@Url.Content(item.ItemImageUrl)" style="max-height:100px;max-width:100px" />
+                    </td>
+                    <td> <p style="word-break: break-all;white-space: normal;">@item.Ingredients</p>                    </td>
+                </tr>
+            </table>
+            </p>
+            <p><a class="btn btn-default" href="/Home/CartById?itemId=@item.ItemId">Order Now</a></p>
+    </td>    
+}
+   </tr>
+   </table>
+
+</div>
